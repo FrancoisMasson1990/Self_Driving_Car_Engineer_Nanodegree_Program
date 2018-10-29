@@ -1,73 +1,13 @@
-# aind2-cnn
+# Vehicle Detection Optimization
 
-### Instructions
+### Weight files
 
-1. Clone the repository and navigate to the downloaded folder.
-	
-```	
-git clone https://github.com/udacity/aind2-cnn.git
-cd aind2-cnn
-```
+You can download the weight from [here](https://drive.google.com/open?id=0B5WIzrIVeL0WS3N2VklTVmstelE) and save it to
+the [weights](weights) folder.
 
-2. (Optional) __If you plan to install TensorFlow with GPU support on your local machine__, follow [the guide](https://www.tensorflow.org/install/) to install the necessary NVIDIA software on your system.  If you are using an EC2 GPU instance, you can skip this step.
+### Neural Network Approach (YOLO)
 
-3. (Optional) **If you are running the project on your local machine (and not using AWS)**, create (and activate) a new environment.
+YOLO is an object detection pipeline baesd on Neural Network. Contrast to prior work on object detection with classifiers to perform detection, YOLO frame object detection as a regression problem to spatially separated bounding boxes and associated class probabilities. A single neural network predicts bounding boxes and class probabilities directly from full images in one evaluation. Since the whole detection pipeline is a single network, it can be optimized end-to-end directly on detection performance. 
 
-	- __Linux__ (to install with __GPU support__, change `requirements/dog-linux.yml` to `requirements/dog-linux-gpu.yml`): 
-	```
-	conda env create -f requirements/dog-linux.yml
-	source activate dog-project
-	```  
-	- __Mac__ (to install with __GPU support__, change `requirements/dog-mac.yml` to `requirements/dog-mac-gpu.yml`): 
-	```
-	conda env create -f requirements/dog-mac.yml
-	source activate dog-project
-	```  
-	- __Windows__ (to install with __GPU support__, change `requirements/dog-windows.yml` to `requirements/dog-windows-gpu.yml`):  
-	```
-	conda env create -f requirements/dog-windows.yml
-	activate dog-project
-	```
-	
-4. (Optional) **If you are running the project on your local machine (and not using AWS)** and Step 6 throws errors, try this __alternative__ step to create your environment.
-
-	- __Linux__ or __Mac__ (to install with __GPU support__, change `requirements/requirements.txt` to `requirements/requirements-gpu.txt`): 
-	```
-	conda create --name dog-project python=3.5
-	source activate dog-project
-	pip install -r requirements/requirements.txt
-	```  
-	- __Windows__ (to install with __GPU support__, change `requirements/requirements.txt` to `requirements/requirements-gpu.txt`):  
-	```
-	conda create --name dog-project python=3.5
-	activate dog-project
-	pip install -r requirements/requirements.txt
-	```
-	
-5. (Optional) **If you are using AWS**, install Tensorflow.
-```
-sudo python3 -m pip install -r requirements/requirements-gpu.txt
-```
-	
-6. Switch [Keras backend](https://keras.io/backend/) to TensorFlow.
-	- __Linux__ or __Mac__: 
-		```
-		KERAS_BACKEND=tensorflow python -c "from keras import backend"
-		```
-	- __Windows__: 
-		```
-		set KERAS_BACKEND=tensorflow
-		python -c "from keras import backend"
-		```
-
-7. (Optional) **If you are running the project on your local machine (and not using AWS)**, create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `dog-project` environment. 
-```
-python -m ipykernel install --user --name dog-project --display-name "dog-project"
-```
-
-8. Launch Jupyter notebook.
-```
-jupyter notebook
-```
-
-9. (Optional) **If you are running the project on your local machine (and not using AWS)**, before running code, change the kernel to match the dog-project environment by using the drop-down menu (**Kernel > Change kernel > dog-project**). 
+The present work was inspired by previous work from :
+https://junshengfu.github.io
