@@ -17,3 +17,22 @@ Deep learning has become the most important frontier in both machine learning an
 ## TRAFFIC SIGN CLASSIFIERBEHAVIORAL CLONING
 ### Sensor Fusion
 Tracking objects over time is a major challenge for understanding the environment surrounding a vehicle. Sensor fusion engineers from Mercedes-Benz will show you how to program fundamental mathematical tools called Kalman filters. These filters predict and determine with certainty the location of other vehicles on the road. You’ll even learn to do this with difficult-to-follow objects by using an extended Kalman filter, an advanced technique.
+
+## Localization, Path Planning, Control, and System Integration
+
+Work with a team to program Carla, Udacity’s real self-driving car! Learn to localize Carla by evaluating camera, radar, lidar, and GPS data to determine Carla’s precise location, and learn to plan where she should go and how the vehicle’s systems work together to get her there.
+
+## Localization
+Localization is how we determine where our vehicle is in the world. GPS is only accurate to within a few meters. We need single-digit centimeter-level accuracy! To achieve this, Mercedes-Benz engineers will demonstrate the principles of Markov localization to program a particle filter, which uses data and a map to determine the precise location of a vehicle.
+
+## KIDNAPPED VEHICLE
+### Planning
+The Mercedes-Benz team will take you through the three stages of planning. First, you’ll apply model-driven and data-driven approaches to predict how other vehicles on the road will behave. Then you’ll construct a finite state machine to decide which of several maneuvers your own vehicle should undertake. Finally, you’ll generate a safe and comfortable trajectory to execute that maneuver.
+
+## HIGHWAY DRIVING
+### Control
+Ultimately, a self-driving car is still a car, and we need to send steering, acceleration, and brake commands to move the car through the world. Uber ATG will walk you through building a proportional-integral-derivative (PID) controller to actuate the vehicle.
+
+## PID CONTROLLER
+### System Integration
+This is the capstone of the entire Self-Driving Car Engineer Nanodegree Program! We’ll introduce Carla, the Udacity self-driving car, and the Robot Operating System that controls her. You’ll work with a team of Nanodegree students to combine what you’ve learned over the course of the entire Nanodegree Program to drive Carla, a real self-driving car, around the Udacity test track!
