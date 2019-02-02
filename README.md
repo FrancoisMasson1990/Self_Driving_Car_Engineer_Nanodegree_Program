@@ -4,7 +4,7 @@ The Self-Driving Car Engineer Nanodegree program is an advanced program focusing
 
 ## Final Result :
 
-[![Capture Video](./Self_Driving_Car_Engineer_Nanodegree_Program/imgs/Simulator_preview.png)](https://youtu.be/IcCJEwIp_aw)
+[![Capture Video](./Programming Real Self Driving Car/imgs/Simulator_preview.png)](https://youtu.be/IcCJEwIp_aw)
 
 ## Computer Vision, Deep Learning, and Sensor Fusion
 
